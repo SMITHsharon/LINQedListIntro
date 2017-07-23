@@ -4,7 +4,9 @@
 
 Given the follwing collections of items, Used LINQ to build the requested collections, and then Console.WriteLine() each item in that resulting collection: 
 - Find the words in the collection that start with the letter 'L'
-`List<string> fruits = new List<string>() {'Lemon', 'Apple', 'Orange', 'Lime', 'Watermelon', 'Loganberry'};`
+```
+List<string> fruits = new List<string>() {'Lemon', 'Apple', 'Orange', 'Lime', 'Watermelon', 'Loganberry'};
+```
 
 - Which of the following numbers are multiples of 4 or 6
 ```
@@ -66,7 +68,7 @@ List<int> wheresSquaredo = new List<int>()
 
 ### How To View The Screen 
 ```
-git clone https://github.com/SMITHsharon/vehicles.git
+git clone https://github.com/SMITHsharon/LINQedListIntro.git
 cd LINQedListIntro
 ```
 
