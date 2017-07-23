@@ -66,7 +66,7 @@ List<int> wheresSquaredo = new List<int>()
 - Visual Studio Code
 
 
-### How To View The Screen 
+
 ```
 git clone https://github.com/SMITHsharon/LINQedListIntro.git
 cd LINQedListIntro
