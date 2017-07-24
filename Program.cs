@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace linq
+namespace linqList
 {
     class Program
     {
@@ -198,7 +198,6 @@ namespace linq
             { 
                 Console.WriteLine(n); 
             } 
-
         }
     }
 }
