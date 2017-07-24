@@ -159,17 +159,21 @@ namespace linqList
                 2340.29, 745.31, 21.76, 34.03, 4786.45, 879.45, 9442.85, 2454.63, 45.65
             };
             double moneySum = purchases.Sum(); 
+            string formattedSum = String.Format("Order Total: {0:C}", moneySum); 
             Console.WriteLine();
-            Console.WriteLine("We have made a total of ${0}.", moneySum); 
-
+            Console.WriteLine("We have made a total of {0}.", String.Format("{0:C}", moneySum)); 
+            // Console.WriteLine("We have made a total of ${0}.", moneySum); 
 
             // What is our most expensive product?
             List<double> prices = new List<double>()
             {
                 879.45, 9442.85, 2454.63, 45.65, 2340.29, 34.03, 4786.45, 745.31, 21.76
             };
+            double maxPrice = prices.Max();
+            string formattedPrice = String.Format("{0:C}", maxPrice); 
             Console.WriteLine();
-            Console.WriteLine($"Our most expensive product costs ${prices.Max()}.");
+            Console.WriteLine($"Our most expensive product costs {formattedPrice}.");
+            // Console.WriteLine($"Our most expensive product costs ${prices.Max()}.");
 
 
 
@@ -180,11 +184,11 @@ namespace linqList
 
                 Ref: https://msdn.microsoft.com/en-us/library/system.math.sqrt(v=vs.110).aspx
             */
-            List<int> wheresSquaredo = new List<int>()
+            List<int> whereSquaredo = new List<int>()
             {
                 66, 12, 8, 27, 82, 34, 7, 50, 19, 46, 81, 23, 30, 4, 68, 14
             };
-            var listUpToPerfectSquare = wheresSquaredo.TakeWhile(n => Math.Sqrt(n)%1 != 0); 
+            var listUpToPerfectSquare = whereSquaredo.TakeWhile(n => Math.Sqrt(n)%1 != 0); 
             
             Console.WriteLine();
             var checkThis = Math.Sqrt(66)%1;
